@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookverse</title>
+
+    <!-- --------- stylesheet --------------------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- googlefonts -------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- --------- icons from Remixicons ------------ -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- --------- swiper css ----------------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!-- ========== HEADER & NAVBAR ========== -->
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2>bookverse</h2>
+        </div>
+        <div class="navmenu">
+            <div class="nav-elements">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#featured">featured</a></li>
+                    <li><a href="#discount">discount</a></li>
+                    <li><a href="#new-book">new books</a></li>
+                    <li><a href="#testimonial">testimonials</a></li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <ul>
+                    <li><i class="ri-user-line" onclick="openSignup()"></i></li>
+                    <li><i class="ri-menu-line ham-menu" onclick="openSidebar()"></i></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="signup">
+        <div class="signup-container">
+            <i onclick="closeSignup()" class="ri-close-large-line"></i>
+            <div class="signup-img">
+                <img src="/assets/img/img1.png" alt="">
+            </div>
+            <div class="signup-form">
+                <h1>signup</h1>
+                <div class="input-container">
+                    <label>name</label>
+                    <input required="" id="input" type="text" placeholder="first Name" />
+                    <div class="underline"></div>
+                    <label>email</label>
+                    <input required="" id="input" type="email" placeholder="Email" />
+                    <div class="underline"></div>
+                    <label>password</label>
+                    <input required="" id="input" type="password" placeholder="password" />
+                    <div class="underline"></div>
+                    <label>confirm password</label>
+                    <input required="" class="password-1" id="input" type="password" placeholder="Confirm Password" />
+                    <div class="underline"></div>
+                    <button>signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <nav class="side-navbar">
+        <div class="nav-elements">
+            <i onclick="closeSidebar()" class="ri-close-large-line"></i>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#featured">featured</a></li>
+                <li><a href="#discount">discount</a></li>
+                <li><a href="#new-book">new books</a></li>
+                <li><a href="#testimonial">testimonials</a></li>
+            </ul>
+        </div>
+    </nav> -->
+    <div class="header">
+        <!-- SECTION HOME -->
+        <div class="home" id="home">
+            <div class="intro">
+                <h2>if you don't like to read you haven't found the right book yet</h2>
+                <p>Welcome to Bookverse, where every page turns into an adventure and every story finds its perfect
+                    reader. Dive into a world where the shelves are lined with imagination and curiosity knows no
+                    bounds. From timeless classics to contemporary bestsellers, we offer a treasure trove of literary
+                    wonders waiting to be explored.</p>
+                <button>explore bookverse!</button>
+            </div>
+            <div class="features">
+                <div>
+                    <h1><i class="ri-truck-line"></i></h1>
+                    <h2>free delivery</h2>
+                    <p>above rupees 499/-</p>
+                </div>
+                <div>
+                    <h1><i class="ri-lock-2-line"></i></h1>
+                    <h2>secure payment</h2>
+                    <p>100% secure payment </p>
+                </div>
+                <div>
+                    <h1><i class="ri-customer-service-2-fill"></i>
+                        <h1>
+                            <h2>24/7 support</h2>
+                            <p>call us anytime</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== FEATURED ========== -->
+    <div class="featured" id="featured">
+        <h1>featured books</h1>
+        <div class="swiper mySwiper featured-slider">
+            <div class="swiper-wrapper featured-swiper-wrapper">
+                <div class="swiper-slide featured-card">
+                    <div class="card-img">
+                        <img src="/assets/img/book11.jpg" alt="this is img">
+                    </div>
+                    <div class="card-content">
+                        <h3>featured book</h3>
+                        <h6>author</h6>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide featured-card">
+                    <div class="card-img">
+                        <img src="/assets/img/book12.jpg" alt="this is img">
+                    </div>
+                    <div class="card-content">
+                        <h3>featured book</h3>
+                        <h6>author</h6>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide featured-card">
+                    <div class="card-img">
+                        <img src="/assets/img/book1.jpg" alt="this is img">
+                    </div>
+                    <div class="card-content">
+                        <h3>featured book</h3>
+                        <h6>author</h6>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide featured-card">
+                    <div class="card-img">
+                        <img src="/assets/img/book3.jpg" alt="this is img">
+                    </div>
+                    <div class="card-content">
+                        <h3>featured book</h3>
+                        <h6>author</h6>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide featured-card">
+                    <div class="card-img">
+                        <img src="/assets/img/book13.jpg" alt="this is img">
+                    </div>
+                    <div class="card-content">
+                        <h3>featured book</h3>
+                        <h6>author</h6>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide featured-card">
+                    <div class="card-img">
+                        <img src="/assets/img/book14.jpg" alt="this is img">
+                    </div>
+                    <div class="card-content">
+                        <h3>featured book</h3>
+                        <h6>author</h6>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide featured-card">
+                    <div class="card-img">
+                        <img src="/assets/img/book4.jpg" alt="this is img">
+                    </div>
+                    <div class="card-content">
+                        <h3>featured book</h3>
+                        <h6>author</h6>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide featured-card">
+                    <div class="card-img">
+                        <img src="/assets/img/book8.jpg" alt="this is img">
+                    </div>
+                    <div class="card-content">
+                        <h3>featured book</h3>
+                        <h6>author</h6>
+                        <button>buy now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide featured-card">
+                    <div class="card-img">
+                        <img src="/assets/img/book16.jpg" alt="this is img">
+                    </div>
+                    <div class="card-content">
+                        <h3>featured book</h3>
+                        <h6>author</h6>
+                        <button>buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <!-- ========== DISCOUNT ========== -->
+    <div class="discount" id="discount">
+        <div class="discount-img">
+            <img class="discount-img-1" src="/assets/img/book8.jpg" alt="this is image">
+            <img class="discount-img-2" src="/assets/img/book2.jpg" alt="this is image">
+        </div>
+        <div class="discount-content">
+            <h1> upto 70% discount</h1>
+            <p> Explore a treasure trove of discounted books, where you can find amazing deals on a wide range of
+                titles. Whether you're looking for bestsellers, classics, or hidden gems, we've got something for every
+                reader at unbeatable prices.</p>
+            <button class="shop-now-btn">shop now</button>
+        </div>
+    </div>
+    <!-- ========== NEW-BOOKS ========== -->
+    <div class="new-books" id="new-book">
+        <h1>new books</h1>
+        <div class="book-rating">
+            <div class="book-rating-card">
+                <div class="new-book-img">
+                    <img src="/assets/img/book1.jpg" alt="">
+                </div>
+                <div class="new-book-rating">
+                    <h2>new book</h2>
+                    <h4>author</h4>
+                    <ul>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-half-line"></i></li>
+                    </ul>
+                    <button class="shop-now-btn">shop now</button>
+                </div>
+            </div>
+            <div class="book-rating-card">
+                <div class="new-book-img">
+                    <img src="/assets/img/book9.jpg" alt="">
+                </div>
+                <div class="new-book-rating">
+                    <h2>new book</h2>
+                    <h4>author</h4>
+                    <ul>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-half-line"></i></li>
+                    </ul>
+                    <button class="shop-now-btn">shop now</button>
+                </div>
+            </div>
+            <div class="book-rating-card">
+                <div class="new-book-img">
+                    <img src="/assets/img/book10.jpg" alt="">
+                </div>
+                <div class="new-book-rating">
+                    <h2>new book</h2>
+                    <h4>author</h4>
+                    <ul>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-half-line"></i></li>
+                    </ul>
+                    <button class="shop-now-btn">shop now</button>
+                </div>
+            </div>
+            <div class="book-rating-card">
+                <div class="new-book-img">
+                    <img src="/assets/img/book11.jpg" alt="">
+                </div>
+                <div class="new-book-rating">
+                    <h2>new book</h2>
+                    <h4>author</h4>
+                    <ul>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-half-line"></i></li>
+                    </ul>
+                    <button class="shop-now-btn">shop now</button>
+                </div>
+            </div>
+            <div class="book-rating-card">
+                <div class="new-book-img">
+                    <img src="/assets/img/book2.jpg" alt="">
+                </div>
+                <div class="new-book-rating">
+                    <h2>new book</h2>
+                    <h4>author</h4>
+                    <ul>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-half-line"></i></li>
+                    </ul>
+                    <button class="shop-now-btn">shop now</button>
+                </div>
+            </div>
+            <div class="book-rating-card">
+                <div class="new-book-img">
+                    <img src="/assets/img/book12.jpg" alt="">
+                </div>
+                <div class="new-book-rating">
+                    <h2>new book</h2>
+                    <h4>author</h4>
+                    <ul class="star">
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-half-line"></i></li>
+                    </ul>
+                    <button class="shop-now-btn">shop now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ========== TESTIMONIALS ========== -->
+    <div class="swiper testimonials" id="testimonial">
+        <h1>testimonials</h1>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide testimonial-pr">
+                <div class="testimonial-img">
+                    <img src="/assets/img/pr1.jpg" alt="">
+                </div>
+                <h3>customer name</h3>
+                <ul>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-half-line"></i></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo aspernatur hic incidunt
+                    accusantium at, velit similique illum voluptate magni, ipsam quis, quae aut facere ut facilis
+                    distinctio. Perspiciatis, facilis.</p>
+            </div>
+            <div class="swiper-slide testimonial-pr">
+                <div class="testimonial-img">
+                    <img src="/assets/img/pr2.jpg" alt="">
+                </div>
+                <h3>customer name</h3>
+                <ul>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-half-line"></i></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo aspernatur hic incidunt
+                    accusantium at, velit similique illum voluptate magni, ipsam quis, quae aut facere ut facilis
+                    distinctio. Perspiciatis, facilis.</p>
+            </div>
+            <div class="swiper-slide testimonial-pr">
+                <div class="testimonial-img">
+                    <img src="/assets/img/pr3.png" alt="">
+                </div>
+                <h3>customer name</h3>
+                <ul>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-half-line"></i></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo aspernatur hic incidunt
+                    accusantium at, velit similique illum voluptate magni, ipsam quis, quae aut facere ut facilis
+                    distinctio. Perspiciatis, facilis.</p>
+            </div>
+            <div class="swiper-slide testimonial-pr">
+                <div class="testimonial-img">
+                    <img src="/assets/img/pr4.jpg" alt="">
+                </div>
+                <h3>customer name</h3>
+                <ul>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-half-line"></i></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo aspernatur hic incidunt
+                    accusantium at, velit similique illum voluptate magni, ipsam quis, quae aut facere ut facilis
+                    distinctio. Perspiciatis, facilis.</p>
+            </div>
+            <div class="swiper-slide testimonial-pr">
+                <div class="testimonial-img">
+                    <img src="/assets/img/pr6.jpg" alt="">
+                </div>
+                <h3>customer name</h3>
+                <ul>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-half-line"></i></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo aspernatur hic incidunt
+                    accusantium at, velit similique illum voluptate magni, ipsam quis, quae aut facere ut facilis
+                    distinctio. Perspiciatis, facilis.</p>
+            </div>
+            <div class="swiper-slide testimonial-pr">
+                <div class="testimonial-img">
+                    <img src="/assets/img/pr5.jpg" alt="">
+                </div>
+                <h3>customer name</h3>
+                <ul>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-fill"></i></li>
+                    <li><i class="ri-star-half-line"></i></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo aspernatur hic incidunt
+                    accusantium at, velit similique illum voluptate magni, ipsam quis, quae aut facere ut facilis
+                    distinctio. Perspiciatis, facilis.</p>
+            </div>
+        </div>
+    </div>
+    <!-- ========== FOOTER ========== -->
+    <div class="footer" id="#footer">
+        <div class="section1">
+            <div class="logo">
+                <h2>bookverse</h2>
+            </div>
+            <p>Whether you seek the latest bestseller, a timeless classic, or an undiscovered gem, our website offers a
+                seamless and enriching browsing experience. Join us in celebrating the written word and embark on a
+                journey where every page turned unveils new possibilities. <span>Happy reading!</span></p>
+        </div>
+        <div class="section2">
+            <h3>about</h3>
+            <ul>
+                <li><a href="#footer">awards</a></li>
+                <li><a href="#footer">FAQs</a></li>
+                <li><a href="#footer">privacy policy</a></li>
+                <li><a href="#footer">terms and condition</a></li>
+            </ul>
+        </div>
+        <div class="section3">
+            <h3>company</h3>
+            <ul>
+                <li><a href="#footer">blogs</a></li>
+                <li><a href="#footer">community</a></li>
+                <li><a href="#footer">our team</a></li>
+                <li><a href="#footer">help center</a></li>
+            </ul>
+        </div>
+        <div class="section4">
+            <h3>contact</h3>
+            <ul>
+                <li>00 xyz street, jodhpur <br> RAJ. INDIA</li>
+                <li>bookverse@gmail.com <br> 0123-012-012</li>
+            </ul>
+
+        </div>
+        <div class="section5">
+            <h3>socials</h3>
+            <ul>
+                <li><i class="ri-instagram-line"></i></li>
+                <li><i class="ri-twitter-x-line"></i></li>
+                <li><i class="ri-facebook-fill"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <h5><i class="ri-copyright-line"></i> all rights are reserved by bookverse</h5>
+    </div>
+    <!-- ============ SWIPER JS ============= -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ MAIN(APP) JS ============= -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
