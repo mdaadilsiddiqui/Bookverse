@@ -86,7 +86,7 @@ button:hover {
 /* ============= HEADER & NAVBAR============= */
 .header {
   height: 100vh;
-  background-image: url(/assets/img/header-bg.png);
+  background-image: url(header-bg.png);
   background-position: bottom;
   background-size: cover;
 }
